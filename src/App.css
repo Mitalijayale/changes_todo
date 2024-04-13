@@ -1,0 +1,28 @@
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+/*back image for login*/
+.login-container {
+  background-image: url(assets/back.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  height: calc(100vh - 71px); /* Subtract navbar height from viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@font-face {
+  font-family: 'Inter V';
+  src: url('./assets/Inter/static/Inter-SemiBold.ttf') format('truetype');
+}
+
+body, input, button, select, textarea,label {
+  font-family: 'Inter V', sans-serif;
+}
+
+
+

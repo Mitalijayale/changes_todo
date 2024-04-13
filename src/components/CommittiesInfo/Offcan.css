@@ -1,0 +1,9 @@
+/* Offcan.css */
+
+.custom-offcanvas {
+  width: 600px; /* Default width */
+
+  @media (max-width: 768px) {
+    width: 100%; /* Set a percentage width for smaller screens */
+  }
+}

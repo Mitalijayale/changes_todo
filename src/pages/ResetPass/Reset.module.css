@@ -1,0 +1,62 @@
+/* Login.module.css */
+
+@import url('https://rsms.me/inter/inter.css');
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+.container {
+  width: 350px; 
+  margin: 0 auto;
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 35px;
+}
+
+.logo {
+  width: 100px; 
+  display: block; 
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+
+.textType {
+  text-align: center;
+  font-size: 22px;
+  font-weight: bold;
+  margin-top: 20px;
+  
+}
+
+.inputcontainer {
+  margin-bottom: 20px;
+}
+
+.inputcontainer input[type="text"],
+.inputcontainer input[type="password"] {
+  border-radius: 6px;
+  border: 2px solid #969696;
+  padding: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.forgetPass {
+  font-size: 14px; 
+  color: #007bff; 
+}
+
+.infoMsg{
+  text-align: center;
+  font-size: 15px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.username {
+  font-size: 12px; 
+  color: #070606;
+  margin-top: 10px;
+}

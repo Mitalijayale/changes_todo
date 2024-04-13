@@ -1,0 +1,50 @@
+body, option, button, select {
+    font-family: 'Inter V', sans-serif;
+}
+
+#committeeSelector {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+}
+
+#committeeSelector select {
+    padding-left: 1rem;
+    flex: 1;
+    height: 100%;
+    font-size: 14px;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    background-color: #F2F2F2;
+}
+
+#committeeSelector button {
+    color: white;
+    font-size: 16px;
+    height: 100%;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    margin-left: 1%;
+    background-color: #1e90ff;
+    padding: 0.8rem 2.1rem;
+    line-height: 1rem; 
+}
+
+#committeeSelector button:hover {
+    background-color: #1973cc;
+}
+
+@media screen and (max-width: 768px) {
+    #committeeSelector button {
+        padding: 0.8rem 1.8rem;
+    }
+}
+
+@media screen and (min-width: 2560px) {
+    #committeeSelector{
+      height: 3rem;
+    }
+  }

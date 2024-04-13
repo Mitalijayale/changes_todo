@@ -1,0 +1,57 @@
+@import url("https://rsms.me/inter/inter.css");
+
+body {
+  font-family: "Inter", sans-serif;
+}
+
+.position {
+  margin: 4px;
+  padding: 10px;
+}
+.AcademicYearSelection {
+  margin-top: 15px;
+}
+
+.container {
+  border-radius: 10px;
+  margin-top: 10px;
+  height: auto;
+  font-size: 16px;
+  width: 350px;
+}
+
+.row {
+  display: flex;
+}
+.acde {
+  margin-top: 15px;
+}
+.label {
+  margin-top: 5px;
+  align-items: center;
+  width: 70%;
+  margin-right: 5px;
+}
+
+.dropdown {
+  width: 100%;
+}
+
+.increasedHeight {
+  height: 40px;
+}
+
+.fullWidthContainer {
+  width: 100%;
+  margin-top: 15px;
+}
+
+.dropdown1 {
+  width: 100%;
+}
+
+.select {
+  height: 45px;
+  margin-left: 15px;
+  border: 2px solid #969696;
+}

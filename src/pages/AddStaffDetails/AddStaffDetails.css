@@ -1,0 +1,274 @@
+.staff-title {
+    margin-top: 1.5rem;
+    display: flex;
+    margin-bottom: 1.5rem;
+    height: 2.2rem;
+
+}
+
+.blank-bar {
+    background-color: #1e90ff;
+    border-radius: 5px;
+    width: 0.3rem;
+    height: 100%;
+}
+
+.staff-title h3 {
+    margin-left: 0.75rem;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+#searchStaffRow {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 1rem;
+    margin-top: 2rem;
+}
+
+.addStaffBtn {
+    margin-left: 0.5rem;
+}
+
+.addStaffBtn,
+.cancelAddBtn,
+.saveAddBtn {
+    color: white;
+    font-size: 16px;
+    border: none;
+    border-radius: 8px;
+    padding: 1rem 4%;
+    background-color: #1e90ff;
+    height: 2.5rem;
+    display: flex;
+    align-items: center;
+}
+
+
+.cancelAddBtn {
+    background-color: #e75757;
+    margin-left: 1%;
+}
+
+.saveAddBtn {
+    margin-left: 1%;
+    background-color: #50bb26;
+    text-align: center;
+}
+
+.saveAddBtn:hover {
+    background-color: #3d8f1d;
+}
+
+
+.facultyImageAdd {
+    width: 10%;
+}
+
+.uploadIconContainer {
+    padding: 1.15rem 1rem;
+    display: flex;
+    background-color: white;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    cursor: pointer;
+    height: 2.5rem;
+    align-items: center;
+}
+
+#uploadImgIcon {
+    margin-left: 0.2rem;
+}
+
+.facultyImageAdd span:hover {
+    background-color: rgba(22, 22, 22, 0.1);
+    border-color: rgba(0, 0, 0, 0.3);
+}
+
+.input-hidden {
+    display: none;
+}
+
+.facultyNameAdd {
+    width: 28%;
+}
+
+.facultyEducationAdd {
+    width: 22%;
+}
+
+.facultySocialAdd {
+    width: 15%;
+}
+
+.facultyNameAdd,
+.facultyEducationAdd,
+.facultySocialAdd {
+    text-align: center;
+    margin-left: 1%;
+}
+
+.addStaffBtn:hover {
+    background-color: #1973cc;
+}
+
+.addFaculty {
+    display: flex;
+    flex-direction: row;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.searchStaff,
+.facultyNameAdd,
+.facultyEducationAdd,
+.facultySocialAdd,
+.uploadImgIcon {
+    height: 2.5rem;
+    font-size: 16px;
+    border: 2px solid rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    text-align: left;
+    padding-left: 10px;
+}
+
+.searchStaff {
+    z-index: 0;
+    padding-left: 1rem;
+    flex: 1;
+    width: calc(100% - 150px);
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.searchStaff input[type="text"] {
+    padding-left: 2rem;
+    width: 100%;
+}
+
+.searchStaff input {
+    font-size: 18px;
+}
+
+.searchIcon {
+    position: absolute;
+    left: 10px;
+    color: gray;
+}
+
+
+.table_section {
+    height: auto;
+    overflow: auto;
+}
+
+.staff-table {
+    width: 100%;
+    table-layout: fixed;
+    min-width: 900px;
+    border-collapse: collapse;
+    box-shadow: 0px 2px 4px rgba(5, 0, 0, 0.1);
+    border-collapse: collapse;
+}
+
+.table-thead th {
+    position: sticky;
+    top: 0;
+    background-color: #f6f9fc;
+    color: #8493a5;
+    font-size: 15px;
+}
+
+.table-thead th,
+.table-thead td {
+    border-bottom: 1px solid #dddddd;
+    padding: 10px 20px;
+    word-break: break-all;
+    text-align: center;
+}
+
+.columnHeading {
+    background-color: #f6f6f6;
+    box-shadow: 0px 2px 4px rgba(5, 0, 0, 0.1);
+}
+
+.cancelAddBtn:hover {
+    background-color: #d66262;
+}
+
+.addFaculty {
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+.addFaculty.open {
+    max-height: 500px;
+}
+
+.noRecordMessage {
+    text-align: center;
+    margin-top: 1rem;
+    color: #888;
+    font-size: 1.5rem;
+}
+
+::-webkit-scrollbar {
+    height: 5px;
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+::-webkit-scrollbar-thumb {
+    box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+}
+
+
+
+@media screen and (max-width: 1200px) {
+    .facultyNameAdd {
+        margin-left: 55px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .addFaculty {
+        flex-wrap: wrap;
+    }
+
+    .addFaculty>* {
+        flex: 1 1 100%;
+        margin-bottom: 0.5rem;
+    }
+
+    .addFaculty.open {
+        max-height: unset;
+    }
+
+    .uploadIconContainer {
+        margin-left: 0;
+    }
+
+    .facultyNameAdd {
+        margin-left: 0.3rem;
+    }
+
+    .saveAddBtn,
+    .cancelAddBtn {
+        display: block;
+        line-height: 1%;
+    }
+
+    .facultyImageAdd label{
+        width: 100%; 
+    }
+
+    .uploadIconContainer {
+        justify-content: center; 
+    }
+    
+}

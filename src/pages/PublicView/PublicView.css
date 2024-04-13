@@ -1,0 +1,15 @@
+* {
+  font-family: "Inter", sans-serif;
+}
+
+.card {
+  cursor: pointer;
+}
+
+.committee-description {
+  text-align: justify;
+}
+
+p {
+  font-size: 14px;
+}

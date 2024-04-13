@@ -1,0 +1,33 @@
+.mainText{
+    font-family: 'Inter V', sans-serif;
+    margin-top: 1.5%;
+    margin-bottom: 1.5%;
+  }
+  
+  .header-container {
+    display: flex;
+    flex-wrap: wrap; 
+    margin-top: 1rem;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+
+@media screen and (max-width: 768px) {
+    .mainText {
+      text-align: center;
+      margin: 0;
+      margin-top: 1rem;
+    }
+  
+    .header-container > * {
+      margin-top: 2rem;
+      margin: auto;
+    }
+  }
+  
+  
+  @media screen and (min-width: 2560px) {
+    .header-container{
+      margin-top: 2rem;
+    }
+  }

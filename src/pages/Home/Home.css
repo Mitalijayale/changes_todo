@@ -1,0 +1,321 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin:wght@600&family=Merriweather:wght@700&family=Montserrat:wght@300;400;500;600;700&family=Rubik&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  border: none;
+  outline: none;
+  box-sizing: border-box;
+  font-family: "Montserrat", sans-serif;
+}
+
+.main--content {
+  background: #ebe9e9;
+  width: 100%;
+  align-items: center;
+  padding: 2rem 4rem;
+}
+
+/* Color CSS */
+
+.light-red {
+  background: rgb(251, 233, 233);
+}
+.light-purple {
+  background: rgb(254, 226, 254);
+}
+.light-green {
+  background: rgb(235, 254, 235);
+}
+.light-blue {
+  background: rgb(236, 236, 254);
+}
+.dark-red {
+  background: red;
+}
+.dark-purple {
+  background: purple;
+}
+.dark-green {
+  background: green;
+}
+.dark-blue {
+  background: blue;
+}
+
+/* Title Content */
+
+.container-1 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.5rem 0rem 0.5rem 1rem;
+}
+
+/* .container-1 .btn {
+  padding: 7px 10px;
+  margin-bottom: 10px;
+} */
+
+
+.custom-button {
+  background-color: white;
+  color: #1e90ff;
+  border: none;
+  border-radius: 5px;
+  box-shadow: 2px 6px 10px 2px rgba(0, 0, 0, 0.15); 
+  transition: box-shadow 0.3s ease;
+}
+
+.custom-button:hover {
+  background-color: rgb(236, 231, 231);
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.15); 
+}
+
+.tabular--wrapper {
+  background: #fff;
+  margin-top: 0.3rem;
+  border-radius: 10px;
+  padding: 1.5rem 2rem;
+}
+
+.container-2 {
+  display: flex;
+  padding: 1rem 0rem;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.main--title {
+  padding: 0rem 0rem;
+}
+
+.container-2 .btn {
+  background-color: #1e90ff;
+  color: #fff;
+}
+
+.container-2 .btn:hover {
+  background-color: #1973cc;
+  box-shadow: 2px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.btn-outline-primary{
+  border-color: #1e90ff;
+  color: #1e90ff;
+}
+
+.btn-outline-primary:hover{
+  background-color: #1e90ff;
+}
+
+.table--container {
+  width: 100%;
+}
+
+th.committee-name {
+  width: 35%;
+  max-width: 35%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+th.head-of-committee {
+  width: 35%;
+  max-width: 35%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.table--container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.table--container thead {
+  background-color: rgb(211, 211, 211);
+  color: black;
+  border-color: whitesmoke;
+  border-width: 1px;
+}
+
+.table--container th {
+  padding: 15px;
+  text-align: center;
+  border-color: whitesmoke;
+  border-width: 1px;
+}
+
+.table--container tbody {
+  background: #f2f2f2;
+  border-color: whitesmoke;
+  border-width: 1px;
+}
+
+/* .table--container tbody td{
+  padding-left: 5rem;
+} */
+
+.table--container td {
+  padding: 9px;
+  font-size: 14px;
+  color: #333;
+  border-color: whitesmoke;
+  border-width: 1px;
+}
+
+.table--container .tdrow {
+  text-align: center;
+  font-weight: 500;
+}
+
+.table--container tr:nth-child(even) {
+  background: #fff;
+}
+
+.table--container tfoot {
+  background: rgb(211, 211, 211);
+  font-weight: bold;
+}
+
+.table--container tfoot td {
+  padding: 15px;
+}
+
+.table--container button {
+  background: none;
+  cursor: pointer;
+}
+
+/* Media */
+
+/* For Tablet View */
+@media screen and (min-device-width: 543px) and (max-device-width: 767px) {
+  .main--content {
+    background: #ebe9e9;
+    width: 100%;
+    align-items: center;
+    padding: 2.5rem 2.5rem;
+  }
+
+  .table--container {
+    overflow-x: auto;
+  }
+
+  .table--container table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .table--container th,
+  .table--container td {
+    padding: 10px;
+    white-space: nowrap;
+  }
+
+  .container-1,
+  .container-2 {
+    flex-direction: column; /* Stack items vertically */
+  }
+}
+
+@media screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  .main--content {
+    background: #ebe9e9;
+    width: 100%;
+    align-items: center;
+    padding: 2.5rem 2.5rem;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-device-width: 1390px) {
+  .main--content {
+    background: #ebe9e9;
+    width: 100%;
+    align-items: center;
+    padding: 2.5rem 2.5rem;
+  }
+}
+
+@media screen and (max-device-width: 542px) and (orientation: portrait) {
+  .main--content {
+    background: #ebe9e9;
+    width: 100%;
+    align-items: center;
+    padding: 2rem 2rem;
+  }
+  .table--container {
+    overflow-x: auto;
+  }
+
+  .table--container table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .table--container th,
+  .table--container td {
+    padding: 10px;
+    white-space: nowrap;
+  }
+
+  .container-1 {
+    flex-direction: column; /* Stack items vertically */
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 0rem;
+  }
+
+  .container-1 .btn {
+    margin-top: 1rem;
+  }
+
+  .container-2 {
+    flex-direction: column; /* Stack items vertically */
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+
+@media screen and (max-device-width: 640px) and (orientation: landscape) {
+  .main--content {
+    background: #ebe9e9;
+    width: 100%;
+    align-items: center;
+    padding: 2.5rem 2.5rem;
+  }
+
+  .col-md-1 {
+    padding-right: 0rem;
+  }
+}
+
+@media screen and (max-device-width: 320px) and (-webkit-min-device-pixel-ratio: 2) {
+  .main--content {
+    background: #ebe9e9;
+    width: 100%;
+    align-items: center;
+    padding: 2rem 2rem;
+  }
+
+  .table--container {
+    overflow-x: auto;
+  }
+
+  .table--container table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+
+  .table--container th,
+  .table--container td {
+    padding: 10px;
+    white-space: nowrap;
+  }
+
+  .col-md-1 {
+    padding-left: 0rem;
+  }
+}

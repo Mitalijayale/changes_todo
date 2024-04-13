@@ -1,0 +1,346 @@
+*{
+  font-family: 'Inter V', sans-serif;
+}
+
+.committee-container{
+    margin-left: 5%;
+    margin-right:5%;  
+}
+
+.committeeForm label{
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.committeeForm{
+    border:2px solid;
+    border-color: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+    width: 100%;
+    height:auto;
+    background-color:#F2F2F2;
+}
+
+.rowMain,.rowMain1{
+    display: flex;
+    margin-left: 2rem;
+    margin-top: 1.2rem;
+    margin-right: 2rem;
+  }
+
+  .rowMain{
+    margin-top: 0.2rem;
+    margin-bottom: 1rem;
+  }
+
+  #row1 {
+    width: 49%;
+    margin-right: 3%; 
+  }
+  
+  #row2{
+    flex-direction: 1;
+    width: 49%;
+  }
+
+  #row3 textarea{
+    padding: 0.7rem;
+    font-size: 14px; 
+    border:2px solid;
+    border-color: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    height: 3rem;
+    resize: none;
+  }
+
+  #TaMaxLen{
+    font-size: 14px;
+  }
+
+  #row4{
+    width: 55%;
+  }
+
+  #row5{
+    margin-left: 2%;
+    width: 45%;
+    display: flex;
+    align-items: center; 
+  }
+  
+.FolderIcon{
+  margin-bottom:0.2rem;
+}
+
+  #row1 input,
+  #row2 input,#row3 textarea{
+    width: 100%;
+  }
+
+  #row1 input,
+  #row2 input,
+  #row4 input,
+  #row5 input{
+    padding-left: 1rem;
+    padding-right: 1rem;
+    height: 2.5rem;
+    font-size: 14px; 
+    border: 2px solid;
+    border-color: rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+  }
+
+  #row4 input{
+    width: 100%;
+  }
+
+#addRow,#row3,#row7,#row8,#row9{
+    margin-left:2rem;
+    margin-top:1rem;
+    margin-right: 2rem;
+}
+
+#row6{
+  margin-left:2rem;
+  margin-top:0.3rem;
+  margin-right: 2rem;
+}
+
+#addRow{
+  margin-top:1rem;
+}
+
+#row5 input{
+  width: 85%;
+  flex: 1; 
+}
+
+#row6 button{
+  width: 100%;
+  color: white;
+  border: none;
+  height: 2.5rem;
+  font-size: 18px;
+  border-radius: 12px;
+  background-color: rgba(51, 51, 51, 0.3);
+  cursor: pointer;
+}
+
+#row6 button:hover{
+  background-color: rgba(22, 22, 22, 0.4);
+}
+
+.input-hidden {
+  display: none;
+}
+
+
+#row8 label {
+
+  font-size: 14px;
+}
+
+.custom-file-input {
+  width: 100%;
+}
+
+.custom-file-input input[type="file"] {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.custom-file-input label {
+  display: flex;
+  background-color: white;
+  border: 2px solid rgba(0, 0, 0, 0.2);
+  padding: 0.5rem 1.5rem;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 18px;
+
+}
+
+.custom-file-input label:hover {
+  background-color: rgba(22, 22, 22, 0.1);
+  border-color: rgba(0, 0, 0, 0.3);
+}
+
+#row9 {
+    margin-bottom: 1rem;
+    display: flex;
+    justify-content: flex-end;
+    width:calc(100% - 4rem);
+}
+
+#row9 p {
+  font-size: 16px;
+  margin: auto; 
+  margin-left: 0;
+  font-family: 'Inter V', sans-serif;
+  color: rgba(0,0,0,0.4);
+}
+
+#row9 button {
+    margin-left: 1rem; 
+}
+
+#btnSave,
+#btnCancel,
+#btnReset{
+  color: white;
+  font-size: 14px; 
+  font-weight: bold;
+  border: none;
+  border-radius: 12px;
+  margin: 0;
+  cursor: pointer;
+}
+
+#row5 button{
+    margin-left:3%;
+    background-color: #ff8686;
+    width: auto;
+    height: 2.5rem;
+    color: white;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+#btnSave ,#btnCancel,#btnReset{
+  padding: 0.5rem 2.5rem;
+}
+
+#btnSave {
+  background-color: #1e90ff;
+}
+
+#btnSave:hover {
+  background-color: #1973cc;
+}
+
+#btnCancel{
+  background-color: #ff8686;
+}
+
+#btnCancel:hover, #row5 button:hover {
+  background-color: #d66262;
+}
+
+#btnReset{
+    background-color: white;
+    color: #ff8686;
+}
+
+#btnReset:hover {
+    background-color: rgb(226, 221, 221)
+}
+
+.LinkButton{
+  width: auto;
+}
+
+@media screen and (max-width: 768px) {
+    #row1,
+    #row2,#row5 {
+      width: 100%; 
+      margin-right: 0; 
+      margin-top: 1rem;
+    }
+
+    #row4{
+      width: 100%; 
+      margin-right: 0; 
+    }
+
+    #row5{
+      margin-top: 1rem;
+      margin-left: 0;
+      width:100%;
+    }
+
+    .rowMain,.rowMain1 {
+      flex-direction: column; 
+    }
+
+    #row1 input{
+      margin-bottom:3%;
+    }
+
+    .committee-container{
+      margin-top: 4%;
+    }
+
+    #row9 {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end; 
+    }
+  
+    #row9 button {
+      width: 100%;
+      margin-left: 0;
+      margin-top: 1rem; 
+    }
+
+    .LinkButton{
+      width: 100%;
+    }
+  }
+
+  @media screen and (min-width: 2560px) {
+
+    .rowMain1{
+      margin-top: 2rem;
+    }
+
+    #row1 input,
+    #row2 input,
+    #row4 input,
+    #row5 input{
+      height: 3.5rem;
+      font-size: 18px;
+      margin-top: 0.5rem;
+    }
+  
+    #row3 textarea{
+      height: 5rem;
+      font-size: 18px;
+      margin-top: 0.5rem;
+    }
+
+    #row9{
+      margin-top: 2rem;
+      margin-bottom: 2rem;
+    }
+
+    #btnSave,
+    #btnCancel,
+    #btnReset{
+      font-size: 20px;
+    }
+
+  .characters-remaining {
+    font-size: 20px; 
+  }
+
+  #row8 label{
+    font-size: 18px;
+  }
+
+  #row8 .Upload-Doc{
+    font-size: 20px;
+  }
+
+    .committeeForm label{
+      margin-top: 1rem;
+      font-size: 20px;
+    }
+  }
+  
+
+

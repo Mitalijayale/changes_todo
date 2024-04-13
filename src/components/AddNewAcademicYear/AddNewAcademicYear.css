@@ -1,0 +1,74 @@
+h1,h3,button{
+  font-family: 'Inter V', sans-serif;
+}
+
+.top-row {
+    margin-top: 3%;
+  }
+  
+  .AcademicYearSelection,
+  .Searchbar {
+    width: calc(50% - 1rem);
+  }
+
+  .noCommittees {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3rem;
+    padding: 2rem;
+}
+
+.noCommittees h3 {
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+}
+  
+  .noCommittees h3 {
+    color: rgba(0, 0, 0, 0.4);
+  }
+  
+  .noCommittees button {
+    margin-top: 1rem;
+    color: white;
+    font-size: 20px;
+    border: none;
+    border-radius: 12px;
+    cursor: pointer;
+    padding: 1rem 2rem; 
+    background-color: #8EBCE8;
+}
+
+.noCommittees button:hover {
+    background-color: #1973cc;
+}
+  
+  @media screen and (max-width: 768px) {
+    .top-row {
+      text-align: center;
+    }
+  
+    .AcademicYearSelection,
+    .Searchbar {
+      width: 100%;
+    }
+  
+    .noCommittees {
+      margin-top: 2rem;
+      width: 90%;
+      margin-left: auto;
+      margin-right: auto;
+      text-align: center;
+      padding: 1rem;
+    }
+
+    
+  
+    .noCommittees button {
+      font-size: 16px;
+      margin-bottom: 2rem;
+  }
+  }
+  
+  
